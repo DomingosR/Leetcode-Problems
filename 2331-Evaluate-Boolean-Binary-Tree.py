@@ -8,5 +8,5 @@ class Solution(object):
             if node.val == 2:
                 return evalNode(node.left) or evalNode(node.right)
             return evalNode(node.left) and evalNode(node.right)
-        
+
         return evalNode(root)
