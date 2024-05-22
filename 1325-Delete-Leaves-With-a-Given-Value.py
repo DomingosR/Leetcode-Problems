@@ -9,4 +9,4 @@ class Solution(object):
                 return False
             return True
 
-        return None if processNode(root) else root
+        return None if processNode(root) else rootfc
