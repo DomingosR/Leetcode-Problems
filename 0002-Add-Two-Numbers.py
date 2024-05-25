@@ -13,7 +13,7 @@ class Solution(object):
             if secondTerm:
                 currentNode.val += secondTerm.val
                 secondTerm = secondTerm.next
-            
+
             if currentNode.val >= 10:
                 currentNode.val -= 10
                 currentNode.next = ListNode(1)
@@ -22,5 +22,5 @@ class Solution(object):
                 if firstTerm or secondTerm:
                     currentNode.next = ListNode(0)
                     currentNode = currentNode.next
-        
+
         return answerHead
