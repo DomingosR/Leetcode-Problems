@@ -3,6 +3,5 @@ class Solution:
         cumSum = list(accumulate(nums))
         cumSumMod = [0] + [indNum % k for indNum in cumSum]
         modCounter = Counter(cumSumMod)
-        print(modCounter)
 
-        return sum([n*(n-1)//2 for n in modCounter.values()])
+        return sum([n*(n-1)//2 for n in modCounter.values()])  
