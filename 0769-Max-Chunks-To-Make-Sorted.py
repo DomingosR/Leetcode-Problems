@@ -1,12 +1,12 @@
 class Solution(object):
     def maxChunksToSorted(self, arr):
-        currMax = -1
         numChunks = 0
+        maxCurrentChunk = -1
         
         for i in range(len(arr)):
-            currMax = max(currMax, arr[i])
-            if currMax == i:
+            maxCurrentChunk = max(maxCurrentChunk, arr[i])
+            if maxCurrentChunk == i:
                 numChunks += 1
-                currMax = -1
-            
+                maxCurrentChunk = -1
+                
         return numChunks
